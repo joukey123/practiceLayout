@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+header {
+  height: 6rem;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo_title {
+  width: 10rem;
+  height: 10rem;
+  background-color: tomato;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo_title > a {
+  width: 50%;
+  text-align: center;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.menu {
+  display: flex;
+  justify-content: first baseline;
+  align-items: center;
+  width: 100%;
+  background-color: tomato;
+}
+
+.menu > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+.menu > ul > li > a {
+  display: inline-block;
+  padding: 0.5rem;
+  margin: 0.6rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.icon {
+  z-index: 1;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+.icon > a > img {
+  margin: 0.3rem;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slider_img {
+  width: 46%;
+  height: 25rem;
+  background: url("./images/p_images/slider_01.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider_img > span {
+  width: 2rem;
+  height: 2rem;
+  background: url(./images/s_images/slider_arrow.png) no-repeat;
+  box-shadow: 1px 1px 1px black;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+.nextBtn {
+  transform: rotate(180deg);
+}
+.side_banner {
+  width: 27%;
+  background-color: rosybrown;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.side_banner_column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+.side_banner_column > img {
+  max-width: 8rem;
+  object-fit: cover;
+  border-radius: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+.keywords {
+  width: 27%;
+  background-color: palevioletred;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.keywords > ol > li > a {
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0.2rem;
+}
+.lasest {
+  width: 30%;
+  height: 15rem;
+  background-color: rgb(196, 88, 38);
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+  text-align: center;
+}
+.lasest > ul,
+.popular > ul {
+  list-style: none;
+  margin: 0.5rem;
+}
+
+.lasest > ul > li > a,
+.popular > ul > li > a {
+  background: url("./images/s_images/post_circle_icon.png") no-repeat;
+  background-position: left center;
+  display: inline-block;
+  width: 65%;
+  white-space: pre;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0.2rem;
+  padding-left: 0.875rem;
+}
+.popular {
+  width: 30%;
+  height: 15rem;
+  background-color: blueviolet;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+  text-align: center;
+}
+.link_banner {
+  width: 25%;
+  background-color: tomato;
+}
+.link_banner_column_1 {
+  width: 100%;
+  height: 50%;
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link_banner_column_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+.link_banner_column_2 > a > img {
+  margin: 0.5rem;
+}
+
+.social {
+  width: 15%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.social > a > img {
+  margin: 0.5rem;
+}
+footer {
+  height: 5rem;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-size: 0.8rem;
+}
